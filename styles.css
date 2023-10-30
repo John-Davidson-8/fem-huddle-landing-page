@@ -66,15 +66,12 @@ h6 {
   --clr-primary-1-violet: hsl(257, 40%, 49%);
   --clr-primary-2-softMagenta: hsl(300, 69%, 71%);
 
-  /* fonts */
-  --ff-bodyFont: font-family: 'Open Sans', sans-serif;
-  /* --ff-headingFont: font-family: poppins; */
-
   /* box shadow */
   --shadow-1: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
   --shadow-2: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
   --shadow-3: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
-  --shadow-4: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  --shadow-4: 0 20px 25px -5px rgb(0 0 0 / 0.1),
+    0 8px 10px -6px rgb(0 0 0 / 0.1);
 }
 
 body {
@@ -87,6 +84,8 @@ body {
   grid-template-columns: 1fr; */
   max-width: 25rem;
   margin: auto;
+  --shadow-4: 0 20px 25px -5px rgb(0 0 0 / 0.1),
+    0 8px 10px -6px rgb(0 0 0 / 0.1);
 }
 .logo {
   width: 9rem;
@@ -124,24 +123,18 @@ p {
   height: 2.5rem;
   border-radius: 1.5rem;
 }
-
-.social{
-  width: 1.75rem;
-  height: 1.75rem; 
-  display:flex;
-  gap: 1rem;
+.footer-links {
+  display: flex;
   justify-content: center;
-  
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
 }
 
-
-
-
-
-
-
-
-
+.footer-link {
+  color: white;
+  font-size: 1rem;
+  margin-right: 1rem;
+}
 
 .attribution {
   font-size: 11px;
