@@ -27,18 +27,18 @@ Users should be able to:
 
 ### Screenshot
 
-![](../screenhots/mobile-screenshot.png)
+![](./screenshots/mobile-screenshot.png)
 
-![](./screenhots/desktop-screenshot.png)
+![](./screenshots/desktop-screenshot.png)
 
 ### Links
 
-- [Check out the code here](https://github.com/John-Davidson-8/fem-single-price-grid-component)
-- [Explore the live site here](https://fem-single-price-grid-component-main.netlify.app/)
+- [Check out the code here](https://github.com/John-Davidson-8/fem-huddle-landing-page)
+- [Explore the live site here](https://fem-huddle-landing-page-main.netlify.app/)
 
 ## My process
 
-I began mobile first using grid one column. For larger screens I added a media query at 38rem width which added a second column. The card has three sections on on top of the other in mobile view. In wider view the top section spreads out over one column, and the lower two sections are set side by side.
+I began mobile first using grid one column. For larger screens I added a media query at 60rem width which added a second column.
 
 ### Built with
 
@@ -49,56 +49,66 @@ I began mobile first using grid one column. For larger screens I added a media q
 
 ### What I learned
 
-I learned loads in this project as it is my first using CSS Grid. I found after watching tutorials and reading docs on Grid, that putting the theory into practice was challenging. I feel that I over-code and have to strip back before completion. I am still challenged by padding and margins, when to use which? I have also used variables in the css for colors, fonts, and box-shadows. This speeds things up.
+I learned loads in this project as it is my second using CSS Grid. I found after watching tutorials and reading docs on Grid, that putting the theory into practice was challenging. This was a challenging project as I struggled with the transition from mobile view to desktop. The issue was at the 700px width which is tablet width. I am not too happy with the final outcome as I had to use negative margins on the header image, however, this at times of transition covers the logo in the header.
 
-One particular aspect of html I learned in this project was how to use the span class to place text side by side in a variety of ways. In the CSS I learned the vertical-align property. The image below details this. I would usually use Flex-box for this, but it is good to have other tools in the box.
+One aspect I relearned on this project was deploying background images through css rather than embedding within the html. I used a url to place a background svg file in the media query.
 
-![](./screenhots/span-class-example.png)
+![](./screenshots/background-img-code-example-css.png)
 
-This is the html and css code below:
+I also learned about negative margins in this project. Where an image element had to be out of its usual place. And also, I re-learned how to deploy icons from Fontawsome. I forgot the part of placing the link inside the html head. This link I got from [](https://cdnjs.com/libraries/font-awesome).
+
+This is the html below, I have included the entire head as it contains the google fonts also. It is handy for future reference. I was able to style the icons in the css, that code is below also.
 
 ```html
-<div class="card-pricing">
-  <h2>Monthly Subscription</h2>
-  <span class="price">$29</span><span class="per">per month</span>
-  <p class="card-price-dollar">Full access for less than &dollar;1 a day</p>
-  <a class="card-price-cta" href="#">Sign up</a>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>
+      Frontend Mentor | Huddle landing page with single introductory section
+    </title>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+</html>
 ```
 
 ```css
-.price {
-  display: inline-block;
-  margin-top: 0.7rem;
-  vertical-align: middle;
-  font-size: 2.4rem;
-  font-weight: bolder;
-}
-.per {
-  display: inline-block;
-  margin-top: 0.7rem;
-  vertical-align: middle;
-  padding-left: 0.8rem;
-}
-```
-
-Below is the css for the media query to change the grid layout to make it responsive.
-
-```css
-@media screen and (min-width: 38.75rem) {
-  .card {
-    grid-template-columns: 1fr 1fr;
-  }
-  .card-info {
-    grid-column-start: 1;
-    grid-column-end: 3;
-  }
+.icon {
+  font-size: 1rem;
+  color: white;
+  border: 1px solid white;
+  border-radius: 50%;
+  padding: 0.2rem;
 }
 ```
 
 ### Continued development
 
-Moving forward I realize my weakness is over-coding and hopefully CSS Grid will help with this, where i can strip back the unnecessary code. I am becoming more competent with writing the README files and markdown in general. Also, I know moving forward that I must start to use the dev tools more for de-bugging. With JS on the horizon also this would be highly beneficial.
+This is my second project using css grid at its most basic level. However, I feel it is beneficial to break in gently with it as it seems there is much to learn. I also incorporated flexbox which is now becoming second nature.
 
 ### Useful resources
 
