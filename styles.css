@@ -76,6 +76,7 @@ h6 {
 
 body {
   font-family: var(--ff-bodyFont);
+  background: var(--clr-primary-1-violet);
 }
 .container {
   display: grid;
@@ -186,6 +187,3 @@ footer {
   text-align: center;
   color: blue;
 }
-/* .attribution {
-  color: blue;
-} */
