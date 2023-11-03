@@ -81,6 +81,7 @@ body {
   display: grid;
   grid-template-columns: 1fr;
   padding: 2rem;
+  margin: 2rem;
   background-color: var(--clr-primary-1-violet);
   max-width: 40rem;
   margin: auto;
@@ -93,7 +94,7 @@ body {
   margin-bottom: 2rem;
 }
 .mockup {
-  margin-top: -17rem; 
+  margin-top: -17rem;
 }
 h1 {
   font-family: poppins;
@@ -167,7 +168,7 @@ p {
     text-align: left;
   }
   #cta {
-  margin-right: 25rem;
+    margin-right: 25rem;
   }
   .social-icons {
     margin-top: 10rem;
@@ -177,18 +178,14 @@ p {
     font-size: 2rem;
   }
 }
-
-
-
-
-
-
-
-
-.attribution { */
+footer {
+  margin-top: 2rem;
+}
+.attribution {
   font-size: 11px;
   text-align: center;
+  color: blue;
 }
-.attribution a {
-  color: hsl(228, 45%, 44%);
-}
+/* .attribution {
+  color: blue;
+} */
